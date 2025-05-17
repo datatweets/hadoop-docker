@@ -3,10 +3,15 @@
 # Ignore HDFS data folders
 base/hdfs/
 
-# Optional: ignore Postgres data if host path is used later
+# Ignore Postgres data if host path is used later
 base/postgresql/
 
-base/mysql/data
+# Ignore MySQL data directory
+base/mysql/data/
+
+# Ignore Kafka log directories
 base/kafka/
+
 # Ignore all Zookeeper data
 base/zookeeper/
+base/metabase/data/

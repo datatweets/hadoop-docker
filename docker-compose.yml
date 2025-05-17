@@ -182,7 +182,6 @@ services:
         - ./base/mysql/data:/var/lib/mysql
         - ./base/mysql/init.sql:/data/application/init.sql
     environment:
-        MYSQL_ROOT_USER: root
         MYSQL_ROOT_PASSWORD: secret
         MYSQL_DATABASE: hue
         MYSQL_USER: root
