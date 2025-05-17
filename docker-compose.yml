@@ -321,15 +321,19 @@ services:
         ipv4_address: 172.27.1.20
  
   metabase:
-    image: fjardim/metabase
+    image: metabase/metabase:latest
     container_name: metabase
     hostname: metabase
     volumes:
       - ./base/metabase/data:/metabase-data
     environment:
       MB_DB_FILE: "/metabase-data/metabase.db"
+      JAVA_OPTS: "-Xms512m -Xmx2048m"   # Set heap size to 2GB
     ports:
       - 3000:3000
+    # depends_on:
+    #   - database
+    # restart: always
     deploy:
       resources:
         limits:
