@@ -6,7 +6,7 @@ base/hdfs/
 # Optional: ignore Postgres data if host path is used later
 base/postgresql/
 
-basd/mysql/data
+base/mysql/data
 base/kafka/
 # Ignore all Zookeeper data
 base/zookeeper/
